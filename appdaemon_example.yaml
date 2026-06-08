@@ -1,0 +1,21 @@
+appdaemon:
+  latitude: placeholder
+  longitude: placeholder
+  elevation: 100
+  time_zone: Europe/Brussels
+  plugins:
+    HASS:
+      type: hass
+      ha_url: "YOUR_LOCAL_HA_URL:8123"
+      token: "YOUR_TOKEN"
+http:
+  url: http://127.0.0.1:5050
+logs:
+  main_log:
+    filename: /conf/logs/appdaemon.log
+    log_size: 10000000     
+    log_generations: 5
+  error_log:
+    filename: /conf/logs/error.log
+    log_size: 10000000
+    log_generations: 5
