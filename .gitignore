@@ -1,0 +1,5 @@
+apps/novy/__pycache__/novy.cpython-312.pyc
+apps/novy/novy_old.py
+logs/appdaemon.log
+logs/error.log
+appdaemon.yaml
