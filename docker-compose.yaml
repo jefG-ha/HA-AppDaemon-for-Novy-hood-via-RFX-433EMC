@@ -1,0 +1,13 @@
+appdaemon:
+    image: acockburn/appdaemon:latest
+    container_name: appdaemon
+    restart: unless-stopped
+    volumes:
+      - /volume2/docker/appdaemon:/conf
+    ports:
+      - "5050:5050"
+    depends_on:
+      - homeassistant
+    networks:
+      home_automation:
+        ipv4_address: 172.31.0.10
