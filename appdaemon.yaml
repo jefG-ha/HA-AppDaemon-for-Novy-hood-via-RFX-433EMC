@@ -1,0 +1,21 @@
+appdaemon:
+  latitude: 51.0543
+  longitude: 3.7174
+  elevation: 10
+  time_zone: Europe/Brussels
+  plugins:
+    HASS:
+      type: hass
+      ha_url: "http://192.168.1.130:8123"
+      token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIzZTBhMjZiYmQ2Y2I0YjZiOTk4ODdmMTAyM2ViZWJlZiIsImlhdCI6MTc2NDMzNTQyOSwiZXhwIjoyMDc5Njk1NDI5fQ.3tpT9eA0HdMsdnGRkE-u_Q6rLGJti5i8K1g70MvPPQw"
+http:
+  url: http://127.0.0.1:5050
+logs:
+  main_log:
+    filename: /conf/logs/appdaemon.log
+    log_size: 10000000     
+    log_generations: 5
+  error_log:
+    filename: /conf/logs/error.log
+    log_size: 10000000
+    log_generations: 5
