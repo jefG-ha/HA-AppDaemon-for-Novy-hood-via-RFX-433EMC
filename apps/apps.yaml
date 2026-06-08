@@ -1,0 +1,8 @@
+novy_dampkap:
+  module: novy
+  class: NovyHoodControl
+  hood:
+    name: fan.novy
+    friendly_name: Dampkap
+    host: 192.168.50.3 #RFC-TRX IP
+    port: 10001 #RFX-TRX port
